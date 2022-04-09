@@ -19,6 +19,12 @@ git clone https://github.com/pavry/pharmacy
 config/database.yml
 ```
 ##### 3. Substitute the settings of the local user Postgres
+###### if you need to create
+```bash
+sudo su - postgres
+psql
+CREATE ROLE your_user WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'your_password';
+```
 
 ##### 4. Create and setup the database
 ```bash
