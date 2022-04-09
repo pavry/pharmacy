@@ -97,6 +97,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  
+config.secret_key_base = 'b5da13e3a63d765845560a42d1b4eb943c597ab6bec1a7f1bf523d4d71e6e9e738a0557a985fa2b656bf324990d48e066a08d450a872ad2adcd3805e583b37d3'
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
