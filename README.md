@@ -10,15 +10,15 @@
 
 ### Installation
 
-##### 1. Cloning a repository
+#### 1. Cloning a repository
 ```bash
 git clone https://github.com/pavry/pharmacy
 ```
-##### 2. *Сopy database_example.yml* to *database.yml*
+#### 2. *Сopy database_example.yml* to *database.yml*
 ```bash
 config/database.yml
 ```
-##### 3. Substitute the settings of the local user Postgres
+#### 3. Substitute the settings of the local user Postgres
 if you need to create:
 ```bash
 sudo su - postgres
@@ -26,12 +26,12 @@ psql
 CREATE ROLE your_user WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'your_password';
 ```
 
-##### 4. Create and setup the database
+#### 4. Create and setup the database
 ```bash
 rails db:setup
 rails db:migrate
 ```
-##### 5. Start the Rails servere
+#### 5. Start the Rails servere
 
 ```bash
 bin/rails server
