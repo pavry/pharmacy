@@ -19,7 +19,7 @@ git clone https://github.com/pavry/pharmacy
 config/database.yml
 ```
 ##### 3. Substitute the settings of the local user Postgres
-###### if you need to create
+if you need to create
 ```bash
 sudo su - postgres
 psql
