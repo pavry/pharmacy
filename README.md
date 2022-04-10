@@ -26,7 +26,8 @@ psql
 CREATE ROLE your_user WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'your_password';
 ```
 
-#### 4. Create and setup the database
+#### 4. Setup and migrate the database
+Run the following commands to setup and migrate the database.
 ```bash
 rails db:setup
 rails db:migrate
