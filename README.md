@@ -14,12 +14,13 @@
 ```bash
 git clone https://github.com/pavry/pharmacy
 ```
-#### 2. *Сopy database_example.yml* to *database.yml*
+#### 2. Сopy *database_example.yml* to *database.yml*
+Path to database_example.yml
 ```bash
 config/database.yml
 ```
 #### 3. Substitute the settings of the local user Postgres
-if you need to create:
+If you need to create:
 ```bash
 sudo su - postgres
 psql
