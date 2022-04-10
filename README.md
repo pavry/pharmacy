@@ -15,7 +15,7 @@
 git clone https://github.com/pavry/pharmacy
 ```
 #### 2. Сopy *database_example.yml* to *database.yml*
-Path to database_example.yml
+Path to database_example.yml.
 ```bash
 config/database.yml
 ```
