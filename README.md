@@ -1,6 +1,6 @@
 # Getting started
 
-![Build Status](https://app.travis-ci.com/pavry/pharmacy.svg?branch=master)
+[![Build Status](https://app.travis-ci.com/pavry/database_cleaner.svg?branch=main)](https://app.travis-ci.com/pavry/database_cleaner)
 
 ### Requirements
 
