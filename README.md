@@ -14,29 +14,28 @@
 ```bash
 git clone https://github.com/pavry/pharmacy
 ```
-#### 2. Сopy *database_example.yml* to *database.yml*
-Path to database_example.yml.
+#### 2. Сhange *database_example.yml* to *database.yml*
+Rename the database_example.yml into database.yml and add username and password key to the default group.
 ```bash
-config/database.yml
+Path to database_example.yml: /config/database_example.yml
 ```
-#### 3. Substitute the settings of the local user Postgres
-If you need to create:
+#### If you need to create a username and password
+Substitute the settings of the local user Postgres.
 ```bash
 sudo su - postgres
 psql
 CREATE ROLE your_user WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'your_password';
 ```
 
-#### 4. Create and migrate the database
+#### 3. Create and migrate the database
 Run the following commands to create and migrate the database.
 ```bash
 rails db:setup
 rails db:migrate
 ```
-#### 5. Start the Rails servere
+#### 4. Start the Rails servere
 
 ```bash
 bin/rails server
 ```
 And now you can visit the site with the URL http://127.0.0.1:3000/
-
