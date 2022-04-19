@@ -13,18 +13,21 @@ class User < ApplicationRecord
 
     # associations
     has_many :recipes, dependent: :destroy
-    has_many :medicines, dependent: :destroy
+    has_many :orders, dependent: :destroy
 
 
     # scope
     scope :admins, -> { where(role: 'doctor') & where(role: 'pharmacist') }
+    scope :three_days_ago, -> { where("created_at >= ?", Time.now - 3.days) }
     scope :active, -> { where(is_active: true) }
     scope :inactive, -> { where(is_active: false) }
 
 
-    def data
-        return :created_at
+    def self.is_doctor
+        user = User.find_by(role: 'doctor')
+        "Name: #{user.name} | Email: #{user.email}| isActive: #{user.is_active}"  
     end
+
 
 
 end

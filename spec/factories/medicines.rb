@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :medicine do
-    name { Faker::Name.name }
+    title { Faker::Name.title }
     price { Faker::Commerce.price }
     description { Faker::Lorem.paragraph }
     age { 'adult' }

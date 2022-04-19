@@ -11,8 +11,13 @@ RSpec.describe User, type: :model do
   end
 
   describe 'associations' do
-    #it { should have_many(:recipes) }
-    #it { should have_many(:medicines) }
+    #it { should have_many(:recipes).dependent(:destroy) } 
+    #it { should have_many(:orders).dependent(:destroy) } 
+  end  
+
+  context 'when doctor delete the email' do
+     it { expect(user.email).present? }
   end
-  
+
 end
+
