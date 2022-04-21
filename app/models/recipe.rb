@@ -6,8 +6,7 @@ class Recipe < ApplicationRecord
     is not a valid value" }
 
     # associations
-    belongs_to :user
-    #has_many :medicines, through :recipe_use
+    belongs_to :user, foreign_key: "customer_id"
 
     # scope
     scope :use, -> { where(use: true) }

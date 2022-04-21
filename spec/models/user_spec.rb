@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do 
-  let!(:user) { create(:user) }
+  let(:user) { create(:user) }
 
   describe 'validations' do
     it { should validate_presence_of(:email) }
@@ -11,13 +11,15 @@ RSpec.describe User, type: :model do
   end
 
   describe 'associations' do
-    #it { should have_many(:recipes).dependent(:destroy) } 
-    #it { should have_many(:orders).dependent(:destroy) } 
+    it { should have_many(:recipes).with_foreign_key('customer_id') }
+    it { should have_many(:orders).with_foreign_key('order_id') }
   end  
 
-  context 'when doctor delete the email' do
-     it { expect(user.email).present? }
+  context 'is doctor?' do
+    it { expect(user.is_doctor?).to be false }
   end
 
 end
+
+
 

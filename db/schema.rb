@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
   end
 
   create_table "orders", force: :cascade do |t|
+    t.integer "order_id"
     t.decimal "totalPrice"
     t.string "state"
     t.datetime "created_at", precision: 6, null: false
@@ -38,6 +39,12 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
     t.integer "validity"
     t.string "age"
     t.boolean "use"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shows", force: :cascade do |t|
+    t.string "index"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

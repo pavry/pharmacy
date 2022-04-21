@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Medicine, type: :model do
-  #let!(:medicine) { create(:medicine) }
+  let(:medicine) { create(:medicine) }
 
   describe 'validations' do
     it { should validate_presence_of(:title) }

@@ -12,8 +12,8 @@ class User < ApplicationRecord
 
 
     # associations
-    has_many :recipes, dependent: :destroy
-    has_many :orders, dependent: :destroy
+    has_many :recipes, foreign_key: "customer_id"
+    has_many :orders, foreign_key: "order_id"
 
 
     # scope
@@ -23,11 +23,8 @@ class User < ApplicationRecord
     scope :inactive, -> { where(is_active: false) }
 
 
-    def self.is_doctor
-        user = User.find_by(role: 'doctor')
-        "Name: #{user.name} | Email: #{user.email}| isActive: #{user.is_active}"  
+    def is_doctor?
+        role == 'doctor'
     end
-
-
 
 end

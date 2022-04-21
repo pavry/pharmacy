@@ -7,7 +7,7 @@ class Medicine < ApplicationRecord
 	validates :age, inclusion: { in: %w(adult baby), message: "%{value}
     is not a valid value" }
 
-    # associations*
+    # associations
     belongs_to :user
 
 end
