@@ -1,11 +1,11 @@
 class User < ApplicationRecord
 
-	# validations
-	validates :name, :email, presence: true
-	validates :name, length: { in: 2..255 }
-	validates :password, length: { in: 6..255 } 
-	validates :email, uniqueness: true 
-	validates :email, format: { 
+    # validations
+    validates :name, :email, presence: true
+    validates :name, length: { in: 2..255 }
+    validates :password, length: { in: 6..255 } 
+    validates :email, uniqueness: true 
+    validates :email, format: { 
     with: /(\A([a-z]*\s*)*\<*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\>*\Z)/i }
     validates :role, inclusion: { in: %w(customer doctor pharmacist), message: "%{value}
     is not a valid value" }
