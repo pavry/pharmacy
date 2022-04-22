@@ -1,6 +1,6 @@
 # Getting started
 
-[![Build Status](https://app.travis-ci.com/pavry/pharmacy.svg?branch=master)](https://app.travis-ci.com/pavry/pharmacy)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ### Requirements
 
