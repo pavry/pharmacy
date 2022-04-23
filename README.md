@@ -1,7 +1,5 @@
 # Getting started
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 ### Requirements
 
 - Ruby 2.7.2
