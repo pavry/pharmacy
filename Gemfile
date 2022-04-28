@@ -34,6 +34,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'capybara'
   gem 'faker'
+  gem 'apipie-rails'
 end
 
 group :development do
@@ -54,6 +55,7 @@ group :test do
   gem 'webdrivers'
   gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

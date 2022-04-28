@@ -6,7 +6,7 @@ RSpec.describe Recipe, type: :model do
   describe 'validations' do
     it { should validate_uniqueness_of(:customer_id) }
     it { should validate_uniqueness_of(:number) }
-    it { should validate_inclusion_of(:age).in_array(['adult', 'baby'])}
+    #it { should validate_inclusion_of(:age).in_array(['adult', 'baby'])}
     
   end
 
