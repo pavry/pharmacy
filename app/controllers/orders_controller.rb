@@ -5,7 +5,7 @@ class OrdersController < ApplicationController
   end
 
   def create
-  	@order = Order.new(params[:order])
+  	@order = Order.create(order_params)
 
     if @order.save
       redirect_to @order
@@ -15,4 +15,7 @@ class OrdersController < ApplicationController
   end
 
 
+  def order_params
+    params.require(:order).permit(:totalPrice, :state)
+  end
 end
