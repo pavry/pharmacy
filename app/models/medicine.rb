@@ -8,6 +8,6 @@ class Medicine < ApplicationRecord
     is not a valid value" }
 
     # associations
-    belongs_to :user
+    belongs_to :user, optional: true
 
 end
