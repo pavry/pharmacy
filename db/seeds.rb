@@ -19,3 +19,15 @@ User.create(name: 'Anastasia', email: 'nastya@gmail.com', password: 'alalala', r
  	is_active: [true, false].sample
  )
 end
+
+
+
+25.times do 
+ Medicine.create(
+    name: Faker::Commerce.product_name,
+    price: Faker::Commerce.price,
+    description: Faker::Lorem.paragraph,
+    age: ['adult', 'young'].sample
+ )
+end
+

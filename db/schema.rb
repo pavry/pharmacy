@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
   enable_extension "plpgsql"
 
   create_table "medicines", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.decimal "price"
     t.string "description"
     t.string "age"
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "order_id"
     t.decimal "totalPrice"
     t.string "state"
     t.datetime "created_at", precision: 6, null: false
@@ -35,6 +34,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
 
   create_table "recipes", force: :cascade do |t|
     t.integer "customer_id"
+    t.decimal "totalPrice"
     t.integer "number"
     t.integer "validity"
     t.string "age"
