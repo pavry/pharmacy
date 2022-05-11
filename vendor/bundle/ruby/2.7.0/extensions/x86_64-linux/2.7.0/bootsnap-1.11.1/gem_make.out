@@ -1,0 +1,15 @@
+current directory: /home/pavlo/Desktop/pharmacy/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.11.1/ext/bootsnap
+/home/pavlo/.rbenv/versions/2.7.2/bin/ruby -I /home/pavlo/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20220511-72332-c5ver5.rb extconf.rb
+creating Makefile
+
+current directory: /home/pavlo/Desktop/pharmacy/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.11.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/pavlo/Desktop/pharmacy/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.11.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/pavlo/Desktop/pharmacy/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.11.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20220511-72332-14uma1b/bootsnap
