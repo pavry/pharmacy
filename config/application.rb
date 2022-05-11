@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Pharmacy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.assets.css_compressor = nil
+    config.assets.initialize_on_precompile = false
     config.load_defaults 6.1
     config.generators do |g|
       g.test_framework :rspec
