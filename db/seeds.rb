@@ -12,12 +12,23 @@ User.create(name: 'Anastasia', email: 'nastya@gmail.com', password: 'alalala', r
 
 
 
+25.times do 
+ User.create(
+ 	name: Faker::Name.name,
+ 	email: Faker::Internet.email,
+ 	password: Faker::Internet.password,
+ 	role: 'customer',
+ 	is_active: [true, false].sample
+ )
+end
+
+
 
 25.times do 
  Medicine.create(
-    name: 'Korvanol',
-    price: 3.25,
-    description: 'Blablablalblalb blalb blalba blala',
+    name: Korvanol,
+    price: Faker::Commerce.price,
+    description: Faker::Lorem.paragraph,
     age: ['adult', 'young'].sample
  )
 end
