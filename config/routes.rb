@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  apipie
   resources :users
   resources :medicines, only: [:index, :show]
   resources :orders, only: [:create, :show]
