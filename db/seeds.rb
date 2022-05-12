@@ -16,10 +16,10 @@ User.create(name: 'Anastasia', email: 'nastya@gmail.com', password: 'alalala', r
 
 
 
-Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
-Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
-Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
-Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
+# Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
+# Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
+# Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
+# Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.', age: ['adult', 'young'].sample)
 
 # 25.times do 
 #  User.create(
@@ -33,12 +33,12 @@ Medicine.create(name: 'Korvanol', price: 3.75, description: 'Copper mug try-hard
 
 
 
-# 25.times do 
-#  Medicine.create(
-#     name: Korvanol,
-#     price: Faker::Commerce.price,
-#     description: Faker::Lorem.paragraph,
-#     age: ['adult', 'young'].sample
-#  )
-# end
+25.times do 
+ Medicine.create(
+    name: Korvanol,
+    price: Faker::Commerce.price,
+    description: Faker::Lorem.paragraph,
+    age: ['adult', 'young'].sample
+ )
+end
 
