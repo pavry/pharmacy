@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_071432) do
   enable_extension "plpgsql"
 
   create_table "medicines", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.decimal "price"
     t.string "description"
     t.string "age"
