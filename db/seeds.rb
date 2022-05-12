@@ -35,7 +35,7 @@ User.create(name: 'Anastasia', email: 'nastya@gmail.com', password: 'alalala', r
 
 25.times do 
  Medicine.create(
-    name: Korvanol,
+    name: Faker::Name.name,
     price: Faker::Commerce.price,
     description: Faker::Lorem.paragraph,
     age: ['adult', 'young'].sample
