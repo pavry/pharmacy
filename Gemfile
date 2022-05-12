@@ -37,6 +37,7 @@ group :development, :test do
   gem 'capybara'
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   gem 'apipie-rails'
+  gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.8'
 end
 
 group :development do
@@ -63,4 +64,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "tailwindcss-rails", "~> 2.0"
+
